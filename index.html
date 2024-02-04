@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Valentine?</title>
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+        <div class="img-wrapper">
+            <img src="https://media1.tenor.com/m/0ks_QifP-5YAAAAC/ositos.gif" alt="">
+        </div>
+        <div class="text-wrapper">
+            <h1>ты будешь моим валентином?</h1>
+        </div>
+        <div class="button-wrapper">
+            <div class="yes" id="yesBtn">
+                <div class="upper-pane">
+                    <h1>да</h1>
+                </div>
+                <div class="lower-pane" id="lower-pane">
+                    <h1>❤️</h1>
+                </div>
+            </div>
+            <div class="no" id="noBtn">
+                <h1>нет</h1>
+            </div>
+        </div>
+    </div>
+    <div class="success-wrapper" id="success-wrapper">
+        <h1>Я так счастлива!</h1>
+        <img src="https://media1.tenor.com/m/vyWpqPY__AUAAAAC/cute-love.gif" alt="">
+    </div>
+    <script>
+        const wrapper = document.getElementById('wrapper');
+        const succesWrapper = document.getElementById('success-wrapper');
+
+        const yesButton = document.getElementById('yesBtn');
+        const lowerPane = document.getElementById('lower-pane');
+
+        const noButton = document.getElementById('noBtn');
+
+        yesButton.addEventListener('mouseover', () => {
+            yesButton.style.cursor = 'pointer';
+            lowerPane.style.transform = 'translateY(0%)';
+        });
+
+        yesButton.addEventListener('mouseout', () => {
+            lowerPane.style.transform = 'translateY(100%)';
+        });
+
+        yesButton.addEventListener('click', () => {
+            wrapper.style.transform = 'translateY(-200%)';
+            succesWrapper.style.transform = 'translateY(0%)';
+        });
+
+        noBtn.addEventListener('mouseover', () => {
+            noButton.style.opacity = '0%';
+            noButton.style.cursor = 'default';
+        });
+
+        noBtn.addEventListener('click', () => {
+            noButton.style.opacity = '0%';
+            noButton.style.cursor = 'default';
+        });
+    </script>
+</body>
+</html>
