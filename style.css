@@ -1,0 +1,126 @@
+html {
+    overflow: hidden;
+    background-color: white;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.wrapper {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    transition: 1s ease;
+}
+
+.img-wrapper {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 200px;
+    border-radius: 35px;
+}
+
+.text-wrapper {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(58, 58, 58);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+}
+
+.button-wrapper {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-wrapper .yes {
+    overflow: hidden;
+    height: 40px;
+    width: 125px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    flex-direction: column;
+    
+    background-color: rgb(51, 236, 51);
+}
+
+.button-wrapper .no {
+    height: 40px;
+    width: 125px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s ease;
+
+    background-color: rgb(255, 63, 63);
+}
+
+.button-wrapper div h1 {
+    font-size: 20px;
+    margin-top: 4px;
+    user-select: none;
+    color: white;
+}
+
+.upper-pane {
+    position: absolute;
+    margin: 0;
+    height: 40px;
+    width: 125px;
+}
+
+.lower-pane {
+    position: relative;
+    margin: 0;
+    height: 40px;
+    width: 125px;
+    transform: translateY(100%);
+    background-color: pink;
+    transition: 0.5s ease;
+}
+
+.success-wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 75vh;
+    bottom: 0;
+    background-color: pink;
+    transition: 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    transform: translateY(100%);
+}
+
+.success-wrapper h1 {
+    color: white;
+    font-size: 50px;
+}
